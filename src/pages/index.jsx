@@ -6,21 +6,14 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  TwitterIcon,
-  InstagramIcon,
-  GitHubIcon,
-  LinkedInIcon,
-} from '@/components/SocialIcons'
+import { TwitterIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoBubble from '@/images/logos/bubble.svg'
+import logoIBM from '@/images/logos/ibm.svg'
+import logoUber from '@/images/logos/uber.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -141,27 +134,23 @@ function Resume() {
     {
       company: 'Uber',
       title: 'Software Engineer Intern',
-      logo: logoPlanetaria,
-      start: 'Jun 2022',
-      end: 'Aug 2022',
-      // end: {
-      //   label: 'Present',
-      //   dateTime: new Date().getFullYear(),
-      // },
+      logo: logoUber,
+      start: '06/2022',
+      end: '08/2022',
     },
     {
       company: 'Bubble',
       title: 'Software Engineer Intern',
-      logo: logoAirbnb,
-      start: 'Jan 2022',
-      end: 'May 2022',
+      logo: logoBubble,
+      start: '01/2022',
+      end: '05/2022',
     },
     {
       company: 'IBM',
-      title: 'Software Engineering Intern',
-      logo: logoFacebook,
-      start: 'Mar 2021',
-      end: 'Aug 2021',
+      title: 'Software Engineer Intern',
+      logo: logoIBM,
+      start: '03/2021',
+      end: '08/2021',
     },
   ]
 
@@ -169,7 +158,7 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Experience</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
@@ -206,7 +195,8 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="https://drive.google.com/file/d/1-EJSApkId4pYRmSl352F-Vv0eRhJtBBC/view?usp=sharing"
+        href="https://drive.google.com/uc?export=download&id=1-EJSApkId4pYRmSl352F-Vv0eRhJtBBC"
+        download="WeirongWuResume"
         variant="secondary"
         className="group mt-6 w-full"
       >
@@ -223,12 +213,11 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {[image1, image2, image3, image4].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-              rotations[imageIndex % rotations.length]
+              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl'
             )}
           >
             <Image

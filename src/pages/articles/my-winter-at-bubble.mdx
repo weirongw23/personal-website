@@ -1,4 +1,6 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/future/image'
+import bubbleSeriesA from './bubble-series-a.png'
 
 export const meta = {
   author: 'Peter Wu',
@@ -10,110 +12,20 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-text text text
+<Image src={bubbleSeriesA} alt="" />
 
-```js
-import { animate } from '@planetaria/animaginary'
+## Background
 
-export function MyComponent({ open, children }) {
-  return (
-    <animate.div
-      in={open}
-      animateFrom="opacity-0 scale-95"
-      animateTo="opacity-100 scale-100"
-      duration={350}
-    >
-      {children}
-    </animate.div>
-  )
-}
-```
+In July 2015, my parents and I officially opened our family restaurant in Farmington, Michigan. We were like a scrappy little startup without funding, taking one day at a time and hoping we'd still be open tomorrow. I felt we were the right team to build the most authentic, clean, and fresh Chinese restaurant locally.
 
-## Subtitle
+Our first customers were us walking across town passing out flyers. As we grew, we needed a more scalable solution to the problem. I had heard of Wix, Squarespace, and different platforms designed for restaurants, but none of them were capable of building web apps at scale at a low cost. I came across Bubble, and I leveraged it to build an online ordering app and internal inventory tracker.
 
-text
+Bubble brought me to the world of programming and led me to pursue it as a major in college. Bubble truly occupies a special place in my heart. So, I took the next step in my journey from using the platform to building the platform.
 
-```c
-exbibyte_wins = gigahertz(3);
-grayscaleUtilityClient = control_uat;
-pcmciaHibernate = oop_virus_console(text_mountain);
-if (stateWaisFirewire >= -2) {
-    jfs = 647065 / ldapVrml(tutorialRestore, 85);
-    metal_runtime_parse = roomComputingResolution - toolbarUpload +
-            ipx_nvram_open;
-} else {
-    maximizeSidebar *= suffix_url(flatbed + 2, requirements_encoding_node +
-            only_qbe_media, minicomputer);
-}
-```
+## About Bubble
 
-## Subtitle
+Each day, Bubble's no-code platform introduces new people to the joy and magic of building software.
 
-Texts
+## Takeaways
 
-1. Numerated List
-2. Numerated List
-
-Texts
-
-```cpp
-#include <iostream>
-
-using namespace std;
-
-const double PI = 3.1415;
-
-struct Ratio {
-    double ratio;
-    size_t index;
-
-    Ratio(double r, size_t i) : ratio(r), index(i) {}
-};
-
-double fracKnapsack(const vector<int> &profit,
-                    const vector<int> &weight,
-                    double capacity) {
-    vector<Ratio> v;
-    size_t n = profit.size();
-
-    for (size_t i = 0; i < n; ++i) {
-        double ratio = static_cast<double>(profit[i]) / weight[i];
-        v.push_back(Ratio{ratio, i});
-    }
-
-    std::sort(v.begin(), v.end(),
-              [&](const Ratio &a, const Ratio &b) {
-        return a.ratio > b.ratio;
-    });
-
-    double maxProfit = 0.0;
-
-    for (size_t i = 0; i < n; ++i) {
-        if (capacity - weight[v[i].index] >= 0) {
-            maxProfit += profit[v[i].index];
-            capacity -= weight[v[i].index];
-            continue;
-        }
-
-        double frac = capacity / weight[v[i].index];
-        maxProfit += frac * profit[v[i].index];
-        break;
-    }
-
-    return maxProfit;
-}
-
-int main(int argc, char *argv[]) {
-    std::string hello = "hello world";
-
-    ios::sync_with_stdio(false);
-
-    vector<int> profit = {10, 5, 15, 7, 6, 18, 3};
-    vector<int> weight = {2, 3, 5, 7, 1, 4, 1};
-    double capacity = 15;
-
-    cout << fracKnapsack(profit, weight, capacity) << endl;
-
-    return 0;
-}
-```
+As a power-user of Bubble, I am truly amazed by what I - and the billions around the world - can build on Bubble. It still boggles my mind that a 15-year old kid can use Bubble and a 20-year old kid can contribute to the platform that will democratize technology to everyone across the globe. I am excited for all that's yet to come. Check it out at www.bubble.io.

@@ -18,10 +18,6 @@ pre[class*='language-'] {
   color: theme('colors.pink.400');
 }
 
-.token.variable {
-  color: theme('colors.teal.400');
-}
-
 .token.attr-name,
 .token.rule,
 .token.pseudo-class,

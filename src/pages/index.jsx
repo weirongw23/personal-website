@@ -135,12 +135,14 @@ function Resume() {
       company: 'Uber',
       title: 'Software Engineer Intern',
       logo: logoUber,
+      link: 'https://www.uber.com',
       start: '06/2022',
       end: '08/2022',
     },
     {
       company: 'Bubble',
       title: 'Software Engineer Intern',
+      link: 'https://www.bubble.io',
       logo: logoBubble,
       start: '01/2022',
       end: '05/2022',
@@ -148,6 +150,7 @@ function Resume() {
     {
       company: 'IBM',
       title: 'Software Engineer Intern',
+      link: 'https://www.ibm.com',
       logo: logoIBM,
       start: '03/2021',
       end: '08/2021',
@@ -164,7 +167,9 @@ function Resume() {
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+              <a href={role.link}>
+                <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+              </a>
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
@@ -239,8 +244,8 @@ export default function Home({ articles }) {
       <Head>
         <title>Peter Wu</title>
         <meta
-          name="description"
-          content="Hello! My name is Peter Wu, and I am a senior at University of Michigan majoring in Computer Science. I have previously interned at Uber, Bubble, and IBM. In my free time, I work on side projects, run, and manage a family restaurant that I co-founded seven years ago. Please feel free to reach out!"
+          name="Peter Wu"
+          content="Hello! My name is Peter Wu, and I am a senior at University of Michigan majoring in Computer Science. I have previously interned at Uber, Bubble, and IBM. In my free time, I work on side projects, run, and manage a family restaurant that I co-founded seven years ago. I will for sure try to convince you that Michigan is the best state in America. Below are some photos I take on my runs or bike rides. Please feel free to reach out!"
         />
       </Head>
       <Container className="mt-9">
@@ -249,11 +254,16 @@ export default function Home({ articles }) {
             Peter Wu
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hello! My name is Peter, and I am a senior at University of Michigan
-            majoring in Computer Science. I have previously interned at Uber,
+            Hello! My name is Peter Wu, and I am a senior at University of
+            Michigan majoring in Computer Science. I have interned at Uber,
             Bubble, and IBM. In my free time, I work on side projects, run, and
-            manage a family restaurant that I co-founded seven years ago. Please
-            feel free to reach out!
+            manage a Chinese restaurant that I co-founded seven years ago.
+          </p>
+
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            I will for sure try to convince you that Michigan is the best state
+            in America. Below are some photos I take on my runs or bike rides.
+            Please feel free to reach out!
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

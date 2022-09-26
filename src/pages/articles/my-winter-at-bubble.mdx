@@ -1,0 +1,117 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Peter Wu',
+  date: '2022-09-26',
+  title: 'My Winter at Bubble',
+  description:
+    'Sixteen weeks of learning and growing at the worlds leading no-code platform',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+text text text
+
+```js
+import { animate } from '@planetaria/animaginary'
+
+export function MyComponent({ open, children }) {
+  return (
+    <animate.div
+      in={open}
+      animateFrom="opacity-0 scale-95"
+      animateTo="opacity-100 scale-100"
+      duration={350}
+    >
+      {children}
+    </animate.div>
+  )
+}
+```
+
+## Subtitle
+
+text
+
+```c
+exbibyte_wins = gigahertz(3);
+grayscaleUtilityClient = control_uat;
+pcmciaHibernate = oop_virus_console(text_mountain);
+if (stateWaisFirewire >= -2) {
+    jfs = 647065 / ldapVrml(tutorialRestore, 85);
+    metal_runtime_parse = roomComputingResolution - toolbarUpload +
+            ipx_nvram_open;
+} else {
+    maximizeSidebar *= suffix_url(flatbed + 2, requirements_encoding_node +
+            only_qbe_media, minicomputer);
+}
+```
+
+## Subtitle
+
+Texts
+
+1. Numerated List
+2. Numerated List
+
+Texts
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+struct Ratio {
+    double ratio;
+    size_t index;
+
+    Ratio(double r, size_t i) : ratio(r), index(i) {}
+};
+
+double fracKnapsack(const vector<int> &profit,
+                    const vector<int> &weight,
+                    double capacity) {
+    vector<Ratio> v;
+    size_t n = profit.size();
+
+    for (size_t i = 0; i < n; ++i) {
+        double ratio = static_cast<double>(profit[i]) / weight[i];
+        v.push_back(Ratio{ratio, i});
+    }
+
+    std::sort(v.begin(), v.end(),
+              [&](const Ratio &a, const Ratio &b) {
+        return a.ratio > b.ratio;
+    });
+
+    double maxProfit = 0.0;
+
+    for (size_t i = 0; i < n; ++i) {
+        if (capacity - weight[v[i].index] >= 0) {
+            maxProfit += profit[v[i].index];
+            capacity -= weight[v[i].index];
+            continue;
+        }
+
+        double frac = capacity / weight[v[i].index];
+        maxProfit += frac * profit[v[i].index];
+        break;
+    }
+
+    return maxProfit;
+}
+
+int main(int argc, char *argv[]) {
+    std::string hello = "hello world";
+
+    ios::sync_with_stdio(false);
+
+    vector<int> profit = {10, 5, 15, 7, 6, 18, 3};
+    vector<int> weight = {2, 3, 5, 7, 1, 4, 1};
+    double capacity = 15;
+
+    cout << fracKnapsack(profit, weight, capacity) << endl;
+
+    return 0;
+}
+```

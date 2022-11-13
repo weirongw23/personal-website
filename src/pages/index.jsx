@@ -14,6 +14,8 @@ import image4 from '@/images/photos/image-4.jpg'
 import logoBubble from '@/images/logos/bubble.svg'
 import logoIBM from '@/images/logos/ibm.svg'
 import logoUber from '@/images/logos/uber.svg'
+import logoMicrosoft from '@/images/logos/microsoft.svg'
+import logoAmazon from '@/images/logos/amazon.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -131,6 +133,22 @@ function Newsletter() {
 
 function Resume() {
   let resume = [
+    {
+      company: 'Microsoft',
+      title: 'Incoming Software Engineer Intern',
+      logo: logoMicrosoft,
+      link: 'https://www.uber.com',
+      start: '06/2023',
+      end: '08/2023',
+    },
+    {
+      company: 'Amazon',
+      title: 'Incoming Software Engineer Intern',
+      logo: logoAmazon,
+      link: 'https://www.uber.com',
+      start: '04/2023',
+      end: '06/2023',
+    },
     {
       company: 'Uber',
       title: 'Software Engineer Intern',

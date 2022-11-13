@@ -200,7 +200,7 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="https://drive.google.com/uc?export=download&id=1-EJSApkId4pYRmSl352F-Vv0eRhJtBBC"
+        href="https://drive.google.com/file/d/1edSwNekdGBMNgDBWOhv0jFos3ZiJqkD3/view?usp=sharing"
         download="WeirongWuResume"
         variant="secondary"
         className="group mt-6 w-full"

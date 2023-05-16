@@ -21,6 +21,14 @@ function SocialLink({ className, href, children, icon: Icon }) {
   )
 }
 
+function LinkItem({ href, children }) {
+  return (
+    <a href={href} className="text-sky-500 dark:hover:text-sky-300">
+      {children}
+    </a>
+  )
+}
+
 function MailIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -55,11 +63,40 @@ export default function About() {
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               About
             </h1>
+
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <p>P1</p>
-              <p>P2</p>
-              <p>P3</p>
-              <p>P4</p>
+              <p>
+                I am excited about distributed systems, information retrieval,
+                generative AI, theory of programming languages, and application
+                of machine learning to computational biology and other related
+                problems.
+              </p>
+              <p>
+                In 2023, I received a B.S.E., summa cum laude, from the
+                University of Michigan in Computer Science and a minor in
+                Mathematics. While at Michigan, I have worked on/was:
+              </p>
+              <ul className="list-inside list-disc">
+                <li>Item 1</li>
+              </ul>
+
+              <p>
+                Outside of everything technical, I enjoy running and managing a
+                local Chinese restaurant I founded with my parents 8 years ago.
+                I also love nature and dangerous sports, like Skydiving, Hiking,
+                Ultracycling, and Marathon running. I have a secret talent in
+                Latin Dancing.
+              </p>
+
+              <p>
+                I am grateful to have experienced diverse cultures around the
+                world. I speak English, Chinese, and Hindi. I have lived in lots
+                of place in my life, both in China and the US - New York, New
+                Jersey, New Hampshire, Massachusetts, Washington, California,
+                and Michigan. One of my life goals is to run 5K on every
+                continent, and so far I am about 57% done. Antartica might be
+                tough (tough).
+              </p>
             </div>
           </div>
           <div className="lg:pl-20">

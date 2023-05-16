@@ -69,15 +69,28 @@ export default function About() {
                 I am excited about distributed systems, information retrieval,
                 generative AI, theory of programming languages, and application
                 of machine learning to computational biology and other related
-                problems.
+                problems. I enjoy creating fast, beautiful, and useful products.
+                Most importantly, I want to inspire people around the world to
+                do the same through tech and education.
               </p>
+
+              <p>
+                In the past, I applied these interests through internships. I
+                worked in Software Engineer roles at Microsoft, Uber, Amazon,
+                Bubble, and IBM.
+              </p>
+
               <p>
                 In 2023, I received a B.S.E., summa cum laude, from the
                 University of Michigan in Computer Science and a minor in
                 Mathematics. While at Michigan, I have worked on/was:
               </p>
               <ul className="list-inside list-disc">
-                <li>Item 1</li>
+                <li>...</li>
+                <li>
+                  <b>Taught</b> Stats 250 (Probability, Statistics, and Data
+                  Analysis) and EECS 280 (Programming & Data Structures)
+                </li>
               </ul>
 
               <p>

@@ -185,12 +185,12 @@ function Resume() {
       <ol className="mt-6 space-y-4 divide-y divide-dotted">
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
-            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center">
+            <div className="relative mt-4 flex h-10 w-10 flex-none items-center justify-center">
               <a href={role.link}>
                 <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
               </a>
             </div>
-            <dl className="flex flex-auto flex-wrap gap-x-2">
+            <dl className="mt-4 flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
               <dd className="w-full flex-none text-base font-semibold text-zinc-900 dark:text-zinc-100">
                 {role.company}

@@ -83,7 +83,9 @@ export default function About() {
               <p>
                 In 2023, I received a B.S.E., summa cum laude, from the
                 University of Michigan in Computer Science and a minor in
-                Mathematics. While at Michigan, I have worked on/was:
+                Mathematics. I grew up in a rural village near Southeast China
+                and am the first person ever from my village to attend college.
+                While at Michigan, I have worked on/was:
               </p>
               <ul className="list-inside list-disc">
                 <li>...</li>

@@ -27,6 +27,7 @@ export function Footer() {
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Peter Wu. All rights reserved.
+                <br />
                 Built with React, JavaScript, Tailwind CSS, NEXT.js, and
                 deployed on Netlify.
               </p>

@@ -132,22 +132,25 @@ function Resume() {
     {
       company: 'Microsoft',
       title: 'Software Engineer Intern',
+      team: 'Azure Storage Developer Experience, Python SDK',
       logo: logoMicrosoft,
-      link: 'https://www.uber.com',
+      link: 'https://www.microsoft.com',
       start: '06/2023',
       end: '08/2023',
     },
     {
       company: 'Amazon',
       title: 'Software Engineer Intern',
+      team: 'Amazon Fresh POEM Team',
       logo: logoAmazon,
-      link: 'https://www.uber.com',
+      link: 'https://www.amazon.com',
       start: '04/2023',
       end: '06/2023',
     },
     {
       company: 'Uber',
       title: 'Software Engineer Intern',
+      team: 'Location & TripContext Team',
       logo: logoUber,
       link: 'https://www.uber.com',
       start: '06/2022',
@@ -156,6 +159,7 @@ function Resume() {
     {
       company: 'Bubble',
       title: 'Software Engineer Intern',
+      team: 'Language & User Data Team',
       link: 'https://www.bubble.io',
       logo: logoBubble,
       start: '01/2022',
@@ -164,6 +168,7 @@ function Resume() {
     {
       company: 'IBM',
       title: 'Software Engineer Intern',
+      team: 'Intelligent Information Team',
       link: 'https://www.ibm.com',
       logo: logoIBM,
       start: '03/2021',
@@ -190,10 +195,12 @@ function Resume() {
               <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
                 {role.company}
               </dd>
+
               <dt className="sr-only">Role</dt>
-              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+              <dd className="text-xs text-zinc-800 dark:text-zinc-400">
                 {role.title}
               </dd>
+
               <dt className="sr-only">Date</dt>
               <dd
                 className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
@@ -208,6 +215,11 @@ function Resume() {
                 <time dateTime={role.end.dateTime ?? role.end}>
                   {role.end.label ?? role.end}
                 </time>
+              </dd>
+
+              <dt className="sr-only">Team</dt>
+              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+                {role.team}
               </dd>
             </dl>
           </li>

@@ -81,10 +81,10 @@ export default function About() {
               </p>
 
               <p>
-                In 2023, I received a B.S.E., summa cum laude, from the
+                In 2023, I received a B.S.E., <i>summa cum laude</i>, from the
                 University of Michigan in Computer Science and a minor in
                 Mathematics. I grew up in a rural village near Southeast China
-                and am the first person ever from my village to attend college.
+                and am the first person from my village to ever attend college.
                 While at Michigan, I have worked on/was:
               </p>
               <ul className="list-inside list-disc">

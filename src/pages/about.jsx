@@ -87,8 +87,13 @@ export default function About() {
               <ul className="list-inside list-disc">
                 <li>...</li>
                 <li>
+                  DNA composition and topology of spinal cord decompression
+                  sickness using laser trapping techniques with Michigan
+                  Medicine and Prof. Jens-Christian Meiners.
+                </li>
+                <li>
                   <b>Taught</b> Stats 250 (Probability, Statistics, and Data
-                  Analysis) and EECS 280 (Programming & Data Structures)
+                  Analysis)
                 </li>
               </ul>
 

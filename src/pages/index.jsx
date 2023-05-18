@@ -135,8 +135,8 @@ function Resume() {
       team: 'Azure Storage Developer Experience, Python SDK',
       logo: logoMicrosoft,
       link: 'https://www.microsoft.com',
-      start: '06/2023',
-      end: '08/2023',
+      start: '06/23',
+      end: '08/23',
     },
     {
       company: 'Amazon',
@@ -144,8 +144,8 @@ function Resume() {
       team: 'Amazon Fresh POEM Team',
       logo: logoAmazon,
       link: 'https://www.amazon.com',
-      start: '04/2023',
-      end: '06/2023',
+      start: '04/23',
+      end: '06/23',
     },
     {
       company: 'Uber',
@@ -153,8 +153,8 @@ function Resume() {
       team: 'Location & TripContext Team',
       logo: logoUber,
       link: 'https://www.uber.com',
-      start: '06/2022',
-      end: '08/2022',
+      start: '06/22',
+      end: '08/22',
     },
     {
       company: 'Bubble',
@@ -162,8 +162,8 @@ function Resume() {
       team: 'Language & User Data Team',
       link: 'https://www.bubble.io',
       logo: logoBubble,
-      start: '01/2022',
-      end: '05/2022',
+      start: '01/22',
+      end: '05/22',
     },
     {
       company: 'IBM',
@@ -171,8 +171,8 @@ function Resume() {
       team: 'Intelligent Information Team',
       link: 'https://www.ibm.com',
       logo: logoIBM,
-      start: '03/2021',
-      end: '08/2021',
+      start: '03/21',
+      end: '08/21',
     },
   ]
 

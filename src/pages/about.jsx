@@ -23,7 +23,10 @@ function SocialLink({ className, href, children, icon: Icon }) {
 
 function LinkItem({ href, children }) {
   return (
-    <a href={href} className="text-sky-500 dark:hover:text-sky-300">
+    <a
+      href={href}
+      className="delay-30 font-bold underline decoration-sky-400 transition ease-in hover:bg-sky-400 hover:text-slate-100 hover:no-underline"
+    >
       {children}
     </a>
   )
@@ -81,11 +84,15 @@ export default function About() {
               </p>
 
               <p>
-                In 2023, I received a B.S.E., <i>summa cum laude</i>, from the
-                University of Michigan in Computer Science and a minor in
-                Mathematics. I grew up in a rural village near Southeast China
-                and am the first person from my village to ever attend college.
-                While at Michigan, I have worked on/was:
+                In 2023, I received a B.S.E., <i>summa cum laude</i>, from the{' '}
+                <LinkItem href="https://cse.engin.umich.edu/">
+                  University of Michigan
+                </LinkItem>{' '}
+                in <b>Computer Science</b> (specialization in Systems and
+                Intelligence) and a minor in <b>Mathematics</b>. I grew up in a
+                rural village near Southeast China and am the first person from
+                my village to ever attend college. While at Michigan, I have
+                worked on/was:
               </p>
               <ul className="list-inside list-disc">
                 <li>...</li>

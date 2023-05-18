@@ -240,7 +240,10 @@ function Resume() {
 
 function LinkItem({ href, children }) {
   return (
-    <a href={href} className="text-sky-500 dark:hover:text-sky-300">
+    <a
+      href={href}
+      className="delay-30 font-bold underline decoration-sky-400 transition ease-in hover:bg-sky-400 hover:text-slate-100 hover:no-underline"
+    >
       {children}
     </a>
   )
@@ -273,8 +276,8 @@ export default function Home({ articles }) {
           </p>
 
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Check out my <LinkItem href="/about">About Page</LinkItem> for more
-            information.
+            For more information, check out my{' '}
+            <LinkItem href="/about">About Page</LinkItem>.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

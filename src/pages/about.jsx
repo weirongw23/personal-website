@@ -4,6 +4,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
+import { LinkItem } from '@/components/LinkItem'
 import { TwitterIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
@@ -18,17 +19,6 @@ function SocialLink({ className, href, children, icon: Icon }) {
         <span className="ml-4">{children}</span>
       </Link>
     </li>
-  )
-}
-
-function LinkItem({ href, children }) {
-  return (
-    <a
-      href={href}
-      className="delay-30 font-bold underline decoration-sky-400 transition ease-in hover:bg-sky-400 hover:text-slate-100 hover:no-underline"
-    >
-      {children}
-    </a>
   )
 }
 

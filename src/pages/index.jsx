@@ -1,11 +1,11 @@
 import Image from 'next/future/image'
 import Head from 'next/head'
 import Link from 'next/link'
-import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
+import { LinkItem } from '@/components/LinkItem'
 import { TwitterIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import logoBubble from '@/images/logos/bubble.svg'
 import logoIBM from '@/images/logos/ibm.svg'
@@ -235,17 +235,6 @@ function Resume() {
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
-  )
-}
-
-function LinkItem({ href, children }) {
-  return (
-    <a
-      href={href}
-      className="delay-30 font-bold underline decoration-sky-400 transition ease-in hover:bg-sky-400 hover:text-slate-100 hover:no-underline"
-    >
-      {children}
-    </a>
   )
 }
 

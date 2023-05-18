@@ -1,0 +1,118 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/future/image'
+import terminal from './terminal.png'
+import starship from './starship.png'
+
+export const meta = {
+  author: 'Peter Wu',
+  date: '2023-05-18',
+  title: 'Day 1 Dev Setup',
+  description:
+    'Effectively set up your terminal to be productive on Day 1 of Onboarding',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+<Image src={terminal} alt="" />
+
+## Background
+
+I started my Amazon SDE internship earlier this month, and while there are many good documentations
+that get me up to speed on internal tools, none of them tell me to customize my terminal.
+
+The terminal is not just a source for compiling code - many developers interact with it by performing
+daily Git workflow, launching the build system, testing, and more. The terminal is also used by IDEs such as
+IntelliJ and VSCode.
+
+We use the terminal everywhere as developers to get work done. **In just 10 minutes or less** I'll take you
+through my setup. Why not invest the time upfront to make it simple, beautiful, and easy to use? 😉
+
+**Note**: This blog is tailored towards MacOS users.
+
+## iTerm2
+
+First, we need to pick a Terminal. Mac comes with a preinstalled Terminal. While that works fine,
+iTerm2 does a much better job at customization capabilities.
+
+Head over to iTerm2's website and install the app locally: https://iterm2.com/
+
+## Customizing iTerm2
+
+### Nerd Fonts
+
+There are many pretty fonts out there that take your terminal experience to the next level. Nerd
+fonts are really good because they are comfortable on the eyes and has special icon support.
+
+Check out this Nerd font website to install them: https://www.nerdfonts.com/font-downloads
+
+Here's a list of my favorites and what they look like:
+
+- [JetBrainsMono Nerd Font](https://www.programmingfonts.org/#jetbrainsmono)
+- [SourceCodePro](https://www.programmingfonts.org/#source-code-pro)
+- [FiraCode](https://www.programmingfonts.org/#firacode)
+
+### Appearance
+
+Open up iTerm2. It should look similar to your usual Terminal app, but the magic is all in the settings.
+Click on iTerm on the top left corner, then click on **Settings** (or "**Preferences**" if older Mac).
+
+**General**
+
+1. Under **Closing**, uncheck everything
+2. Under **Window**, only check "Adjust window when changing font size," "Native full screen windows,"
+   and "Separate window title per tab."
+
+**Appearance**
+
+1. Under **General**, the theme is Minimal, Tab/Status Bar should be at the top.
+2. Under **Panes**, I have the first and last items checked.
+3. Minimize **Dimming** amount to your liking.
+
+**Profile**
+
+1. Under **Colors**, you can choose a preset theme on the bottom right or import your own. I love these
+   colors: https://iterm2colorschemes.com/
+2. Under **Text**, pick the Nerd font you installed previously. I like to set text size to about 16/18, and bold
+   if possible.
+
+**The Rest**
+
+Feel free to spice up the terminal. These are just settings that have worked well for me over the years.
+
+## Starship
+
+<Image src={starship} alt="" />
+
+Now, you've installed the basics. You might see iTerm2 still feels very much like a regular terminal. Let's
+spice up for our daily workflow.
+
+Let's get rid of the redundant information on the left (about the computer) and make our shells super fast.
+
+[Starship](https://starship.rs/) is a cross-shell prompt that is minimal, customizable, and blazing-fast. It is compatible with
+shells like Bash, Zsh, Fish, etc.
+
+Follow the instructions provided here: https://starship.rs/. You can skip the Nerd Font step, since we've already
+completed it above :) I recommend using Homebrew to install Starship and other packages in the future. If you
+don't have that already installed, copy-pasta this into your terminal:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Starship is written in Rust, which means it's fast and has low energy footprint.
+
+## Autosuggestions
+
+Lastly, if you use `zsh` shell, you can install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+that will make the dimmed suggestions you saw with Starship shell. It essentially memorizes your previous
+commands, and matches text suggestions on the fly.
+
+Be sure to add the command to your `~/.zshrc` file as specified in the installation instructions.
+
+Now, restart your terminal and begin typing. You will start to see suggestions pop up. If you don't, then
+type a few more commands. It'll start to memorize them. Once you see those suggestions, tap on the right
+arrow to complete the suggestions!
+
+**Congrats! You have a beautiful terminal that is lightweight, fast, and beautiful to use 🚀**
+
+~ Peter

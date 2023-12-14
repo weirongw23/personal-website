@@ -59,7 +59,7 @@ export default function About() {
 
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I am excited about distributed systems, information retrieval,
+                I am interested in distributed systems, information retrieval,
                 generative AI, theory of programming languages, and application
                 of machine learning to computational biology and other related
                 problems. I enjoy creating fast, beautiful, and useful products.
@@ -85,7 +85,6 @@ export default function About() {
                 worked on/was:
               </p>
               <ul className="list-inside list-disc">
-                <li>...</li>
                 <li>
                   DNA composition and topology of spinal cord decompression
                   sickness using laser trapping techniques with Michigan
@@ -95,6 +94,7 @@ export default function About() {
                   <b>Taught</b> Stats 250 (Probability, Statistics, and Data
                   Analysis)
                 </li>
+                <li>... and a bunch more to come ...</li>
               </ul>
 
               <p>

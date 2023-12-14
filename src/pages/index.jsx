@@ -258,9 +258,8 @@ export default function Home({ articles }) {
             <LinkItem href="https://cse.engin.umich.edu/">
               University of Michigan
             </LinkItem>{' '}
-            and I am an engineer at{' '}
-            <LinkItem href="https://bubble.io/">Bubble</LinkItem>, the
-            world&#39;s leading no-code platform. If you want to get in touch,
+            studying Computer Science, Pure Mathematics, and Statistics.
+            If you want to get in touch,
             my email address is weirongw@umich.edu.
           </p>
 

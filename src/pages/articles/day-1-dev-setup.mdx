@@ -29,6 +29,59 @@ through my setup. Why not invest the time upfront to make it simple, beautiful, 
 
 **Note**: This blog is tailored towards MacOS users.
 
+## Setting up Mac
+
+### XCode and Local Compilers
+Open the App Store and install XCode.
+
+Then, open up a the Terminal app on Mac. We only use this temporarily.
+
+Install a compiler.
+
+```bash
+xcode-select --install
+```
+
+After this is complete, check the installation. Notice that this compiler is really Apple LLVM pretending to be `g++`. Your version might be different.
+
+```bash
+g++ --version
+```
+
+### Homebrew
+
+Next, install Homebrew Package Manager.
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+#### Apple Silicon Users
+
+Apple Silicon users (“M1”, “M2”, etc.) only - Homebrew installs to a non-standard location, `/opt/homebrew/`. You’ll need to run the following to add Homebrew to your path:
+
+```bash
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+```
+
+Reopen your terminal.
+
+#### Verification
+
+Check your install.
+
+```bash
+brew --version  # Your version might be different: Homebrew 3.6.14
+```
+
+#### Install CLI tools
+
+Use the Homebrew package manager to install a few command line programs.
+
+```bash
+brew install wget git tree
+```
+
 ## iTerm2
 
 First, we need to pick a Terminal. Mac comes with a preinstalled Terminal. While that works fine,
@@ -50,6 +103,14 @@ Here's a list of my favorites and what they look like:
 - [JetBrainsMono Nerd Font](https://www.programmingfonts.org/#jetbrainsmono)
 - [SourceCodePro](https://www.programmingfonts.org/#source-code-pro)
 - [FiraCode](https://www.programmingfonts.org/#firacode)
+
+
+Fonts can be installed via the command line interface:
+
+```bash
+brew tap homebrew/cask-fonts  # you only need to do this once!
+brew install --cask font-fira-code-nerd-font
+```
 
 ### Appearance
 

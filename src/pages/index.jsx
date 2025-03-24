@@ -131,7 +131,7 @@ function Resume() {
   let resume = [
     {
       company: 'Microsoft',
-      title: 'Software Engineer Intern',
+      title: 'Software Engineer',
       team: 'Azure Storage DevEx, Python SDK',
       logo: logoMicrosoft,
       link: 'https://www.microsoft.com',
@@ -263,7 +263,7 @@ export default function Home({ articles }) {
             Peter Wu
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi, I am Peter! I am a Software Engineer at 
+            Hi, I am Peter! I am a Software Engineer at{' '}
             <LinkItem href="http://www.microsoft.com">
               Microsoft
             </LinkItem>{' '}

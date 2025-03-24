@@ -132,25 +132,34 @@ function Resume() {
     {
       company: 'Microsoft',
       title: 'Software Engineer Intern',
-      team: 'Azure Storage Developer Experience, Python SDK',
+      team: 'Azure Storage DevEx, Python SDK',
+      logo: logoMicrosoft,
+      link: 'https://www.microsoft.com',
+      start: '03/24',
+      end: 'Present',
+    },
+    {
+      company: 'Microsoft',
+      title: 'Software Engineer Intern',
+      team: 'Azure Storage DevEx, PyTorch ML Framework',
       logo: logoMicrosoft,
       link: 'https://www.microsoft.com',
       start: '06/23',
       end: '08/23',
     },
     {
-      company: 'Amazon',
+      company: 'Amazon Web Services',
       title: 'Software Engineer Intern',
-      team: 'Amazon Fresh POEM Team',
+      team: 'AWS Core Networking',
       logo: logoAmazon,
-      link: 'https://www.amazon.com',
+      link: 'https://aws.amazon.com',
       start: '04/23',
       end: '06/23',
     },
     {
       company: 'Uber',
       title: 'Software Engineer Intern',
-      team: 'Location & TripContext Team',
+      team: 'Location & TripContext',
       logo: logoUber,
       link: 'https://www.uber.com',
       start: '06/22',
@@ -159,7 +168,7 @@ function Resume() {
     {
       company: 'Bubble',
       title: 'Software Engineer Intern',
-      team: 'Language & User Data Team',
+      team: 'Editor Language & User Data',
       link: 'https://www.bubble.io',
       logo: logoBubble,
       start: '01/22',
@@ -168,7 +177,7 @@ function Resume() {
     {
       company: 'IBM',
       title: 'Software Engineer Intern',
-      team: 'Intelligent Information Team',
+      team: 'Intelligent Information',
       link: 'https://www.ibm.com',
       logo: logoIBM,
       start: '03/21',
@@ -254,7 +263,12 @@ export default function Home({ articles }) {
             Peter Wu
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi, I am Peter! I recently graduated from{' '}
+            Hi, I am Peter! I am a Software Engineer at 
+            <LinkItem href="http://www.microsoft.com">
+              Microsoft
+            </LinkItem>{' '}
+            working on Cloud + AI.
+            I graduated from{' '}
             <LinkItem href="https://cse.engin.umich.edu/">
               University of Michigan
             </LinkItem>{' '}

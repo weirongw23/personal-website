@@ -235,12 +235,12 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="https://drive.google.com/file/d/1edSwNekdGBMNgDBWOhv0jFos3ZiJqkD3/view?usp=sharing"
+        href="mailto:weirongw@umich.edu"
         download="WeirongWuResume"
         variant="secondary"
         className="group mt-6 w-full"
       >
-        Download Resume
+        Contact for Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
@@ -254,7 +254,7 @@ export default function Home({ articles }) {
         <title>Peter Wu</title>
         <meta
           name="Peter Wu"
-          content="Hello! My name is Peter Wu, and I am a senior at University of Michigan majoring in Computer Science. I have previously interned at Uber, Bubble, and IBM. In my free time, I work on side projects, run, and manage a family restaurant that I co-founded seven years ago. I will for sure try to convince you that Michigan is the best state in America. Below are some photos I take on my runs or bike rides. Please feel free to reach out!"
+          content="Hi, I am Peter! I am a Software Engineer at Microsoft working on Cloud + AI. I graduated from the University of Michigan studying Computer, Science, Pure Mathematics, and Statistics. Please feel free to reach out any time: weirongw@umich.edu."
         />
       </Head>
       <Container className="mt-9">
@@ -273,8 +273,7 @@ export default function Home({ articles }) {
               University of Michigan
             </LinkItem>{' '}
             studying Computer Science, Pure Mathematics, and Statistics.
-            If you want to get in touch,
-            my email address is weirongw@umich.edu.
+            Please feel free to reach out any time: weirongw@umich.edu.
           </p>
 
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
@@ -308,7 +307,7 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            <!-- <Newsletter /> -->
             <Resume />
           </div>
         </div>
